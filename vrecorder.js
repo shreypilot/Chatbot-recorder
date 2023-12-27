@@ -61,6 +61,10 @@ class VoiceRecorder {
       this.isRecording = true;
       this.startRef.innerHTML = "Recording...";
       this.playerRef.src = '';
+      const yourElement = document.getElementById("start");
+      if (yourElement) {
+        yourElement.style.backgroundColor = "#053819";
+      }
   
       navigator.mediaDevices.getUserMedia(this.constraints)
         .then(this.handleSuccess.bind(this))
@@ -71,7 +75,7 @@ class VoiceRecorder {
       if (!this.isRecording) return;
   
       this.isRecording = false;
-      this.startRef.innerHTML = "Record";
+      this.startRef.innerHTML = 'Record';
       this.recorderRef.pause();
   
       if (this.mediaRecorder) {
