@@ -7,15 +7,31 @@
 
 </head>
 <body>
-	<div class="container">
-		<div class="chat">
-			<div class="chat-header">
-				<div class="profile">
-					<img src="img/bot.png" class="pp" alt="Profile Picture">
-					<h2>Jarvis</h2>
-				</div>
-			</div>
-			<div class="chat-box">
+	<div class="parent">
+        <div class="desc">
+            <h1 class="text">JavaScript Chatbot</h1>
+            <p>  illum sunt? Lorem ipsum dolor sit amet.</p>
+            <button id="init">START CHAT</button>
+        </div>
+        <div>
+            <img src="img/bot.png" alt="" class="bot-img">
+        </div>
+    </div>
+	<div id="test" style="position: fixed;top: 4rem;right: 8rem;display: none;">
+        <div class="child" id="chatbot">
+            <div class="header">
+                <div class="h-child">
+                    <img src="img/bot (1).png" alt="avatar" id="avatar">
+                    <div>
+                        <span class="name">Jarvis</span>
+                        <br>
+                        <span style="color:lawngreen">online</span>
+                    </div>
+                </div>
+                
+            </div>
+
+			<div id="chat-box">
 				<div class="chat-r">
 					<div class="mess mess-r">
 						
@@ -24,14 +40,15 @@
 					</div>
 				</div>
 			</div>
-			<div class="chat-footer">
+			
+            <div class="footer">
                 <audio id="recorder" muted hidden></audio>
-              <button id="start">Record</button>
-			   <button id="stop">Stop Recording</button>
-
-			</div>
-		</div>
-	</div>
+				<button id="start">Record</button>
+				 <button id="stop">Stop Recording</button>
+            </div>
+        </div>
+    </div>
+	
 	<script src="vrecorder.js"></script>
 
 </body>

@@ -1,3 +1,4 @@
+
 class VoiceRecorder {
   constructor() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -5,7 +6,7 @@ class VoiceRecorder {
     } else {
       console.log("Get user media NOT supported");
     }
-    this.chatBoxRef = document.querySelector(".chat-box");
+    this.chatBoxRef = document.querySelector("#chat-box");
 
     this.mediaRecorder = null;
     this.stream = null;
@@ -24,7 +25,17 @@ class VoiceRecorder {
       audio: true,
       video: false,
     };
+    var startChatButton = document.getElementById("init");
+        var chatWindow = document.getElementById("test");
+
+        // Add click event listener to the "START CHAT" button
+        startChatButton.addEventListener("click", function() {
+            // Toggle the display of the chat window
+            chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
+        });
   }
+
+
 
   handleSuccess(stream) {
     this.stream = stream;
