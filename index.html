@@ -1,55 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>ChatBot Jarvis</title>
-	<link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ChatBot Jarvis</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-</head>
-<body>
-	<div class="parent">
-        <div class="desc">
-            <h1 class="text">JavaScript Chatbot</h1>
-            <p>  illum sunt? Lorem ipsum dolor sit amet.</p>
-            <button id="init">START CHAT</button>
-        </div>
-        <div>
-            <img src="img/bot.png" alt="" class="bot-img">
-        </div>
+  <body>
+    <div class="parent">
+      <div class="desc">
+        <h1 class="text">JavaScript Chatbot</h1>
+        <p>illum sunt? Lorem ipsum dolor sit amet.</p>
+        <button id="init">START CHAT</button>
+      </div>
+      <div>
+        <img src="img/bot.png" alt="" class="bot-img" />
+      </div>
     </div>
-	<div id="test" style="position: fixed;top: 4rem;right: 8rem;display: none;">
-        <div class="child" id="chatbot">
-            <div class="header">
-                <div class="h-child">
-                    <img src="img/bot (1).png" alt="avatar" id="avatar">
-                    <div>
-                        <span class="name">Jarvis</span>
-                        <br>
-                        <span style="color:lawngreen">online</span>
-                    </div>
-                </div>
-                
+    <div
+      id="test"
+      style="position: fixed; top: 4rem; right: 8rem; display: none"
+    >
+      <div class="child" id="chatbot">
+        <div class="header">
+          <div class="h-child">
+            <img src="img/bot (1).png" alt="avatar" id="avatar" />
+            <div>
+              <span class="name">Jarvis</span>
+              <br />
+              <span style="color: lawngreen">online</span>
             </div>
-
-			<div id="chat-box">
-				<div class="chat-r">
-					<div class="mess mess-r">
-						
-						<audio id="player" controls></audio>
-
-					</div>
-				</div>
-			</div>
-			
-            <div class="footer">
-                <audio id="recorder" muted hidden></audio>
-				<button id="start">Record</button>
-				 <button id="stop">Stop Recording</button>
-            </div>
+          </div>
         </div>
-    </div>
-	
-	<script src="vrecorder.js"></script>
 
-</body>
+        <div id="chat-box">
+          <div class="chat-r">
+            <audio id="player" class="mess mess-r" controls hidden></audio>
+          </div>
+        </div>
+
+        <div class="footer">
+          <audio id="recorder" muted hidden></audio>
+          <button id="start">Record</button>
+          <button id="stop">Stop Recording</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="vrecorder.js"></script>
+  </body>
 </html>

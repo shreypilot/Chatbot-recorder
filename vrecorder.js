@@ -1,4 +1,3 @@
-
 class VoiceRecorder {
   constructor() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -26,16 +25,15 @@ class VoiceRecorder {
       video: false,
     };
     var startChatButton = document.getElementById("init");
-        var chatWindow = document.getElementById("test");
+    var chatWindow = document.getElementById("test");
 
-        // Add click event listener to the "START CHAT" button
-        startChatButton.addEventListener("click", function() {
-            // Toggle the display of the chat window
-            chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
-        });
+    // Add click event listener to the "START CHAT" button
+    startChatButton.addEventListener("click", function () {
+      // Toggle the display of the chat window
+      chatWindow.style.display =
+        chatWindow.style.display === "none" ? "block" : "none";
+    });
   }
-
-
 
   handleSuccess(stream) {
     this.stream = stream;
@@ -61,13 +59,10 @@ class VoiceRecorder {
     const blob = new Blob(this.chunks, { type: "audio/ogg; codec=opus" });
     const audioURL = window.URL.createObjectURL(blob);
 
-    this.playerRef.src = audioURL;
-    // Create a new audio element
     const newAudioElement = document.createElement("audio");
     newAudioElement.controls = true;
     newAudioElement.src = audioURL;
 
-    // Create a new message container
     const messageContainer = document.createElement("div");
     messageContainer.classList.add("chat-r");
     const message = document.createElement("div");
@@ -82,6 +77,11 @@ class VoiceRecorder {
 
     this.stream.getAudioTracks().forEach((track) => track.stop());
     this.stream = null;
+
+    // Show the chat window if it's hidden
+    if (this.chatWindow.style.display === "none") {
+      this.chatWindow.style.display = "block";
+    }
   }
 
   startRecording() {
