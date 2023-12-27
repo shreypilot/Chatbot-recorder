@@ -16,9 +16,7 @@ body {
 
 .container {
   padding: 2px;
-  justify-content: center;
   margin: auto;
-  align-items: center;
   width: 500px;
 }
 
