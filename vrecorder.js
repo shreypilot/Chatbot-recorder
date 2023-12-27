@@ -16,7 +16,7 @@ class VoiceRecorder {
     this.playerRef = document.querySelector("#player");
     this.startRef = document.querySelector("#start");
     this.stopRef = document.querySelector("#stop");
-
+    this.chatWindow = document.getElementById("test");
     this.startRef.addEventListener("click", this.startRecording.bind(this));
     this.stopRef.addEventListener("click", this.stopRecording.bind(this));
 
