@@ -25,24 +25,33 @@ class VoiceRecorder {
       video: false,
     };
     var startChatButton = document.getElementById("init");
-    var chatWindow = document.getElementById("test");
-
-    // Add click event listener to the "START CHAT" button
-    startChatButton.addEventListener("click", function () {
-      // Toggle the display of the chat window
-      chatWindow.style.display =
-        chatWindow.style.display === "none" ? "block" : "none";
-    });
-
     var startChatBot = document.getElementById("bot");
+    var chatWindow = document.getElementById("test");
+    var closeButton = document.getElementById("closeIcon");
+    
+    startChatButton.addEventListener("click", function () {
+      chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
+    
+      startChatButton.style.display = chatWindow.style.display === "none" ? "block" : "none";
+      
+      startChatBot.style.display = chatWindow.style.display === "none" ? "block" : "none";
+    });
+    
     startChatBot.addEventListener("click", function () {
-      chatWindow.style.display =
-        chatWindow.style.display === "none" ? "block" : "none";
+      chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
+    
+      startChatButton.style.display = chatWindow.style.display === "none" ? "block" : "none";
+      
+      startChatBot.style.display = chatWindow.style.display === "none" ? "block" : "none";
     });
-    var closeButton = document.getElementById("closeIcon"); 
+    
     closeButton.addEventListener("click", function () {
-        chatWindow.style.display = "none";
+      chatWindow.style.display = "none";
+          startChatButton.style.display = "block";
+    
+      startChatBot.style.display = "block";
     });
+    
   }
 
   handleSuccess(stream) {
