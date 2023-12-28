@@ -12,17 +12,6 @@ body {
   margin: 0;
 }
 
-#init {
-  margin-top: 2rem;
-  background: rgba(18, 112, 189, 0.8);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 20px;
-  font-size: 15px;
-  font-weight: 500;
-  cursor: pointer;
-}
 
 .desc p {
   color: #ccc;
@@ -332,9 +321,7 @@ font-weight: 500;
   cursor: pointer;
 }
 @media (max-width: 767px) {
-  body {
-    padding: 0 1rem;
-  }
+ 
 
   .parent {
     padding: 0;
