@@ -3,8 +3,8 @@ html,body{
 }
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(90deg, rgba(1, 1, 88, 0.82), rgb(1, 1, 29));
-  color: #fff; 
+  background: #0000FF;
+  color: #FFFFFF; 
   transition: 1s all ease-in-out;
 }
 #init{
