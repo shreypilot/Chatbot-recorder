@@ -14,12 +14,12 @@ body {
 
 #init {
   margin-top: 2rem;
-  background: rgba(218, 149, 149);
-  color: #fff;
+  background: rgba(18, 112, 189, 0.8);
+  color: white;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
 }
@@ -33,7 +33,7 @@ body {
 .text {
   font-size: 65px;
   font-weight: 800;
-  color: 122, 171, 174;
+  color: #4ad5e3;
   margin: 0;
 }
 
@@ -331,7 +331,6 @@ body {
 #bot{
   cursor: pointer;
 }
-
 @media (max-width: 767px) {
   body {
     padding: 0 1rem;
@@ -347,28 +346,31 @@ body {
 
   #test {
     position: fixed;
-    bottom: 0rem;
-    right: 0rem;
+    bottom: 0;
+    right: 0;
     left: 0;
-   
   }
+
   .child {
     height: 20rem;
     width: 20rem;
   }
-  
+
   .footer {
     width: 20rem;
-          }
+  }
+
   .header {
     width: 20rem;
   }
+
   .text {
     font-size: 35px;
     font-weight: 800;
     color: 122, 171, 174;
     margin: 0;
   }
+
   .desc p {
     color: #ccc;
     margin: 0;
@@ -415,14 +417,15 @@ body {
     padding-left: 10px;
   }
 
-#chat-box {
-  position: relative;
-  bottom: 5rem;
-  padding: 8px 10px;
-  font-size: 12px;
-  height: 20.2rem;
-  overflow: auto;
-  background: rgb(224, 241, 253);
-  text-align: center;
+  #chat-box {
+    position: relative;
+    bottom: 5rem;
+    padding: 8px 10px;
+    font-size: 12px;
+    height: 20.2rem;
+    overflow: auto;
+    background: rgb(224, 241, 253);
+    text-align: center;
+  }
 }
-}
+
