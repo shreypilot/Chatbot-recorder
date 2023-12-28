@@ -24,31 +24,21 @@ class VoiceRecorder {
       audio: true,
       video: false,
     };
-    var startChatButton = document.getElementById("init");
     var startChatBot = document.getElementById("bot");
     var chatWindow = document.getElementById("test");
     var closeButton = document.getElementById("closeIcon");
     
-    startChatButton.addEventListener("click", function () {
-      chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
     
-      startChatButton.style.display = chatWindow.style.display === "none" ? "block" : "none";
-      
-      startChatBot.style.display = chatWindow.style.display === "none" ? "block" : "none";
-    });
     
     startChatBot.addEventListener("click", function () {
       chatWindow.style.display = chatWindow.style.display === "none" ? "block" : "none";
     
-      startChatButton.style.display = chatWindow.style.display === "none" ? "block" : "none";
       
       startChatBot.style.display = chatWindow.style.display === "none" ? "block" : "none";
     });
     
     closeButton.addEventListener("click", function () {
-      chatWindow.style.display = "none";
-          startChatButton.style.display = "block";
-    
+      chatWindow.style.display = "none";    
       startChatBot.style.display = "block";
     });
     
