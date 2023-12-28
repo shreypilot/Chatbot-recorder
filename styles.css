@@ -3,25 +3,27 @@ html,body{
 }
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(90deg, rgba(1,1,88,0.82),rgb(1,1,29));
+  background: linear-gradient(90deg, rgba(1, 1, 88, 0.82), rgb(1, 1, 29));
+  color: #fff; 
   transition: 1s all ease-in-out;
 }
 #init{
   margin-top: 2rem;
   background: indianred;
+  color: #fff; 
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
   font-size: 12px;
   font-weight: 500;
-  color: aliceblue;
   cursor: pointer;
 }
 .desc p{
-  color: rgb(133,153,168);
+  color: #ccc;
   margin: 0;
   font-weight: 600;
 }
+
 .text{
   font-size: 65px;
   font-weight: 800;
