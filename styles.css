@@ -53,18 +53,18 @@ body {
 
 #test {
   position: fixed;
-  top: 4rem;
-  right: 8rem;
+  top: 12rem;
+  right: 4rem;
   display: none;
 }
 .close-icon {
-  background: rgb(189, 25, 25);
-  color: #fff;
+  background-color: rgba(18, 112, 189, 0.8);
+  color: white;
   border: none;
-  padding: 10px 20px;
+ padding: 10px 20px;
   border-radius: 20px;
   font-size: 12px;
-  font-weight: 500;
+font-weight: 500;
   cursor: pointer;
   margin-right: 3px;
 }
@@ -231,7 +231,7 @@ body {
   white-space: normal;
   font-weight: 700;
   text-align: center;
-  background-color: #1ed760;
+  background-color: #4ad5e3;
   color: #fff;
   padding: 8px;
 }
@@ -251,7 +251,7 @@ body {
   white-space: normal;
   font-weight: 700;
   text-align: center;
-  background-color: #ff3b30;
+  background-color: #08848a;;
   color: #fff;
   padding: 8px;
   margin-left: 8px;
@@ -346,9 +346,9 @@ body {
 
   #test {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    top: 24rem;
+    right: 1rem;
+   
   }
 
   .child {
