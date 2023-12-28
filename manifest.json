@@ -1,0 +1,17 @@
+{
+    "name": "ChatBot Jarvis",
+    "short_name": "ChatBot",
+    "description": "JavaScript Chatbot",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1ED760",
+    "icons": [
+      {
+        "src": "img/bot.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ]
+  }
+  
