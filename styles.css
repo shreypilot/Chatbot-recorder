@@ -346,7 +346,7 @@ font-weight: 500;
 
   #test {
     position: fixed;
-    top: 24rem;
+   bottom: 3rem;
     right: 1rem;
    
   }
