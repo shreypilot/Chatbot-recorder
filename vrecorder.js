@@ -33,6 +33,16 @@ class VoiceRecorder {
       chatWindow.style.display =
         chatWindow.style.display === "none" ? "block" : "none";
     });
+
+    var startChatBot = document.getElementById("bot");
+    startChatBot.addEventListener("click", function () {
+      chatWindow.style.display =
+        chatWindow.style.display === "none" ? "block" : "none";
+    });
+    var closeButton = document.getElementById("closeIcon"); 
+    closeButton.addEventListener("click", function () {
+        chatWindow.style.display = "none";
+    });
   }
 
   handleSuccess(stream) {

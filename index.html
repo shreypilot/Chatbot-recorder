@@ -6,37 +6,52 @@
     <link rel="icon" type="image/png" href="./img/bot.png" />
     <meta name="theme-color" content="#000000" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Modern PWA Chatbot javascript Application" />
+    <meta
+      name="description"
+      content="Modern PWA Chatbot javascript Application"
+    />
     <link rel="apple-touch-icon" href="./img/bot.png" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="manifest" href="./manifest.json" />
-   
   </head>
 
   <body>
     <div class="parent">
       <div class="desc">
         <h1 class="text">Jarvis Chatbot</h1>
-        <p>This is Chatbot application background which records audio and plays it back</p>
-        <button id="init">START CHAT</button>
+        <p>
+          This is Chatbot application background which records audio and plays
+          it back
+        </p>
+        <button id="init">START RECORDING</button>
       </div>
       <div>
-        <img src="img/bot.png" alt="bot" class="bot-img" />
+      </div>
+      <div class="footer-bot" id="bot">
+        <div class="talk-bubble">
+          <div class="talktext">
+            <p>START RECORDING</p>
+          </div>
+          <div class="tri-right"></div>
+        </div>
+        <div class="fixed" style="bottom: 2rem; right: 2rem;">
+          <img src="img/bot.png" alt="bot" class="bot-img-footer" />
+        </div>
       </div>
     </div>
-    <div
-      id="test"
-    >
+
+    <div id="test">
       <div class="child" id="chatbot">
         <div class="header">
           <div class="h-child">
             <img src="img/bot (1).png" alt="avatar" id="avatar" />
             <div>
-              <span class="name">Jarvis</span>
+              <span class="name">JARVIS</span>
               <br />
               <span style="color: lawngreen">online</span>
             </div>
           </div>
+          <div class="close-icon" id="closeIcon">CLOSE</div>
         </div>
 
         <div id="chat-box">
@@ -55,13 +70,14 @@
 
     <script src="vrecorder.js"></script>
     <script>
-      if('serviceWorker' in navigator) {
-          window.addEventListener('load', () => {
-              navigator.serviceWorker.register('./serviceworker.js')
-                  .then((reg) => console.log('Success: ', reg.scope))
-                  .catch((err) => console.log('Failure: ', err));
-          })
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker
+            .register("./serviceworker.js")
+            .then((reg) => console.log("Success: ", reg.scope))
+            .catch((err) => console.log("Failure: ", err));
+        });
       }
-  </script>
+    </script>
   </body>
 </html>
